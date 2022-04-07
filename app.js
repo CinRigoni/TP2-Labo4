@@ -14,11 +14,15 @@ connection.connect((error) => {
     console.log("Conexion correcta!")
 })
 
+async function conectaApi(id){
+        await fetch(`https://restcountries.com/v2/callingcode/${id}`, res)
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+}
+
 for(i=0;i<=5;i++){
-    fetch(`https://restcountries.com/v2/callingcode/${i}`)
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+    conectaApi()
 }
 
 connection.end()
