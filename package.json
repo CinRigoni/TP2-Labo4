@@ -19,6 +19,7 @@
   "homepage": "https://github.com/CinRigoni/TP2-Labo4#readme",
   "dependencies": {
     "mysql": "^2.18.1",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^3.2.3",
+    "xhr2": "^0.2.1"
   }
 }
